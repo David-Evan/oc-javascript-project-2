@@ -1,0 +1,26 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #eee;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#contenu > span {
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.lien {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#controles{
+    margin-bottom: 15px;
+}
+
+#zoneDeNotification{
+    opacity: 0;
+    min-height: 55px;
+}

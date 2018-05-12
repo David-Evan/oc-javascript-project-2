@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/liensweb.css">
+    <title>Activité 2</title>
+</head>
+
+<body>
+<!-- Container bootstrap -->
+<div class="container-fluid">
+    <h1 class="text-center"> Activité 2 - Gestionnaire de lien</h1>
+
+    <!-- Zone de notification permettant l'affichage des messages d'information "Lien ajouté / Lien supprimé etc..." -->
+    <div class="row">
+        <div id="zoneDeNotification" class="col-md-offset-3 col-md-6 alert alert-info text-center">
+        </div>
+    </div>
+    <!-- Panneau de contrôle -->
+    <div id="controles">
+        <!-- Bouton de controles  -->
+        <div id="btnDeGestion" class="row">
+            <div class="col-xs-2">
+                <button id="btnAfficherFormulaireAjoutLien" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Ajouter un lien</button>
+            </div>
+            <div class="col-xs-10 text-right">
+                <button id="btnViderListe" type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Vider la liste</button>
+            </div>
+        </div>
+        <!-- Formulaire d'ajout de lien -->
+        <form id="formulaireAjouterLien">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <input type="text" id="auteur" class="form-control" required placeholder="Entrez votre nom"/>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-tag"></span></span>
+                        <input type="text" id= "titre" class="form-control" required placeholder="Entrez le titre du lien" />
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-link"></span></span>
+                        <input type="text" id="url" class="form-control" required placeholder="Entrez l'URL du lien" />
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <button id="btnValiderAjoutLien" type="submit" class="btn btn-success"><span class="glyphicon glyphicon-floppy-save"></span> Ajouter</button>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <button id="btnAnnulerAjoutLien" type="button" class="btn btn-outline-secondary"><span class="glyphicon glyphicon-remove"></span> Annuler</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Les nouveaux éléments sont ajoutés dans cette balise -->
+    <div id="contenu">
+    </div>
+    <script src="../js/liensweb.js"></script>
+</div>
+</body>
+
+</html>
